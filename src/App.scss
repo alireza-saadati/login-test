@@ -1,0 +1,12 @@
+$font: IRANSansWeb, tahoma, sans-serif;
+@font-face {
+  font-family: IRANSansWeb;
+  //src: url("src/assets/fonts/woff/IRANSansWeb.woff") format("woff");
+  src: url("./assets/fonts/woff/IRANSansWeb.woff") format("woff");
+}
+
+body {
+  font-family: $font;
+  margin: unset;
+  width: 100%;
+}
