@@ -1,5 +1,4 @@
 import "./loginPage.style.scss";
-import React from "react";
 import Banner from "../../components/banner/Banner";
 
 const LoginPage = () => {

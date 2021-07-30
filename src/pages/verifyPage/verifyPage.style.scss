@@ -52,33 +52,31 @@
 
 .flex-container {
   display: flex;
-  justify-content: center;
+  //justify-content: center;
   align-items: center;
 }
 
 .submit-button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
+  margin-right: 45px;
   width: 216px;
   height: 48px;
   font-size: 14px;
-  border: none;
-  border-color: #efefef;
   border-radius: 2px;
   color: #ffffff;
   background-color: #009989;
-  margin-top: 5em;
+  margin-top: 4em;
   font-family: IRANSansWeb;
 }
 
 .back-button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
+  margin-left: 40px;
   width: 48px;
   height: 48px;
   padding: 12px;
+  border: none;
   border-radius: 2px;
+  margin-top: 4em;
   background-color: #efefef;
 }

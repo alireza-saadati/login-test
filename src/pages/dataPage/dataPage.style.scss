@@ -1,0 +1,39 @@
+.data--header {
+  text-align: center;
+  margin-top: 5em;
+}
+
+.data--input {
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+
+  .data--input--box {
+    height: 40px;
+    width: 280px;
+    margin: 10px 0.5px 0 0;
+    border: none;
+    border-bottom: 1px solid #efefef;
+    text-align: right;
+    font-family: IRANSansWeb;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}
+
+.submit-button {
+  display: block;
+  margin-left: 45px;
+  margin-right: 75px;
+  width: 280px;
+  height: 48px;
+  font-size: 14px;
+  border: none;
+  border-color: #efefef;
+  border-radius: 2px;
+  color: #ffffff;
+  background-color: #009989;
+  font-family: IRANSansWeb;
+}
