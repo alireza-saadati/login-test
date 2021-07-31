@@ -10,3 +10,13 @@ body {
   margin: unset;
   width: 100%;
 }
+
+.container {
+  max-width: 80%;
+  margin: 0 10%;
+
+  @media (min-width: 576px) {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}

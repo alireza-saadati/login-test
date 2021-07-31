@@ -1,4 +1,5 @@
 import "./recoveryPassword.style.scss";
+import GlobalSubmitButton from "../../components/submitButton/GlobalSubmitButton";
 
 const RecoveryPassword = () => {
   return (
@@ -15,7 +16,7 @@ const RecoveryPassword = () => {
       </a>
       <div className="flex-container">
         <button className="back-button">b</button>
-        <button className="submit-button">ورود</button>
+        <GlobalSubmitButton text={"ارسال"} />
       </div>
     </div>
   );
