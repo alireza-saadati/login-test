@@ -28,29 +28,9 @@
       color: #ffffff;
     }
   }
-
-  .login--mobile-input {
-    width: 100%;
-    text-align: center;
-    margin-top: 1em;
-
-    .login--mobile-input__input {
-      height: 40px;
-      width: 280px;
-      margin: 10px 0.5px 0 0;
-      border: none;
-      border-bottom: 1px solid #efefef;
-      text-align: right;
-      font-family: IRANSansWeb;
-
-      &:focus-visible {
-        outline: none;
-      }
-    }
-  }
 }
 
-.flex-container {
+.flex-center {
   display: flex;
   //justify-content: center;
   align-items: center;
@@ -58,7 +38,7 @@
 
 .back-button {
   display: inline-block;
-  margin-left: 40px;
+  margin-right: 40px;
   width: 48px;
   height: 48px;
   padding: 12px;

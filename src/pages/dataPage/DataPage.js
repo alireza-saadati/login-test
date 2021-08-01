@@ -1,9 +1,10 @@
 import "./dataPage.style.scss";
-import GlobalSubmitButton from "../../components/submitButton/GlobalSubmitButton";
+import GlobalSubmitButton from "../../components/globalSubmitButton/GlobalSubmitButton";
+import Container from "../../components/container/Container";
 
 const DataPage = () => {
   return (
-    <div className="container">
+    <Container>
       <div className="data">
         <div className="data--header">اطلاعات شخصی خود را وارد کنید</div>
         <div className="data--input">
@@ -26,9 +27,9 @@ const DataPage = () => {
             placeholder="تکرار رمز عبور"
           />
         </div>
-        <GlobalSubmitButton />
+        <GlobalSubmitButton text="ورود" />
       </div>
-    </div>
+    </Container>
   );
 };
 

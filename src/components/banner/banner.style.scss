@@ -1,0 +1,27 @@
+.banner--header {
+  height: 250px;
+  background-image: linear-gradient(to bottom, #009989, #004d45);
+  padding-top: 80px;
+  text-align-last: right;
+  padding-right: 30px;
+
+  .banner--header__welcome {
+    font-size: 22px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .banner--header__second {
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .banner--header__third {
+    height: 19px;
+    font-family: IRANSansWeb;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+  }
+}

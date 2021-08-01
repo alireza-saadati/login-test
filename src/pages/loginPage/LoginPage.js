@@ -1,32 +1,50 @@
 import "./loginPage.style.scss";
 import Banner from "../../components/banner/Banner";
-import GlobalSubmitButton from "../../components/submitButton/GlobalSubmitButton";
+import GlobalSubmitButton from "../../components/globalSubmitButton/GlobalSubmitButton";
 import { useState } from "react";
+import Error from "../../components/error/Error";
+import Container from "../../components/container/Container";
+import { useHistory } from "react-router-dom/cjs/react-router-dom";
 
 const LoginPage = () => {
   const [mobile, setMobile] = useState("");
+  const [showError, setShowError] = useState(false);
+  const history = useHistory();
 
   const handleMobileChange = (event) => setMobile(event.target.value);
 
-  if (mobile.length === 11) {
-    alert("موبایل صحیح است");
-  }
+  const onSubmit = (event) => {
+    event.preventDefault();
+    if (mobile.length === 11) {
+      // using window.location
+      // window.location.pathname = "/verify";
+      // 2. using react-router
+      return history.push({
+        pathname: "/verify",
+        state: mobile,
+      });
+    } else {
+      setShowError(true);
+    }
+  };
 
   return (
     <div className="login">
       <Banner />
-      <div className="container">
-        <div className="login--mobile-input">
+      <Container className={"bg-red"} style={{ backgroundColor: "red" }}>
+        <form className="login--mobile-input">
           <input
+            maxLength={11}
+            name="mobile"
             className="login--mobile-input__input"
-            type="number"
             placeholder="شماره موبایل خود را وارد کنید"
             onChange={handleMobileChange}
             value={mobile}
           />
-        </div>
-        <GlobalSubmitButton text={"ارسال"} />
-      </div>
+          <GlobalSubmitButton text={"ارسال"} type="submit" clicked={onSubmit} />
+        </form>
+        {showError && <Error />}
+      </Container>
     </div>
   );
 };
