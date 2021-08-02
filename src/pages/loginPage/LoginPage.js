@@ -35,10 +35,10 @@ const LoginPage = () => {
         <form className="login--mobile-input">
           <input
             maxLength={11}
-            name="mobile"
             className="login--mobile-input__input"
             placeholder="شماره موبایل خود را وارد کنید"
             onChange={handleMobileChange}
+            // onChange={(event) => setMobile(event.target.value)}
             value={mobile}
           />
           <GlobalSubmitButton text={"ارسال"} type="submit" clicked={onSubmit} />

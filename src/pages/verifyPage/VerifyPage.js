@@ -17,7 +17,7 @@ const VerifyPage = (props) => {
           <input
             className="global-input-style"
             type="number"
-            defaultValue="09194580174"
+            defaultValue={state}
           />
           <input
             className="global-input-style"
