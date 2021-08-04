@@ -24,6 +24,14 @@ const Container = (props) => (
 // return (<div className={"container" + " " + props.className} style={props.style}>{props.children}</div>);
 // };
 
+// class componant vs function componant
+
+//  state = {count: 0}
+//  this.setState({count: this.state.count + 1})
+//
+//  const [count, setCount] = useState(0)
+//  setCount(count + 1)
+
 Container.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,

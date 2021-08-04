@@ -2,16 +2,16 @@ import "./globalSubmitButton.style.scss";
 import PropTypes from "prop-types";
 
 const GlobalSubmitButton = (props) => {
-  const { type, clicked, text = "" } = props;
-
+  // const { type, clicked, text = "" } = props;
+  console.log(props);
   return (
     <button
       className="global-submit-button"
       // disabled={true}
-      onClick={clicked}
-      type={type}
+      onClick={props.clicked}
+      type={props.type}
     >
-      {text}
+      {props.text}
     </button>
   );
 };

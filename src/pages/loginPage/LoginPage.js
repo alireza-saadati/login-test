@@ -1,7 +1,7 @@
 import "./loginPage.style.scss";
 import Banner from "../../components/banner/Banner";
 import GlobalSubmitButton from "../../components/globalSubmitButton/GlobalSubmitButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Error from "../../components/error/Error";
 import Container from "../../components/container/Container";
 import { useHistory } from "react-router-dom/cjs/react-router-dom";
@@ -31,7 +31,7 @@ const LoginPage = () => {
   return (
     <div className="login">
       <Banner />
-      <Container className={"bg-red"} style={{ backgroundColor: "red" }}>
+      <Container className={"center"} style={{ backgroundColor: "red" }}>
         <form className="login--mobile-input">
           <input
             maxLength={11}

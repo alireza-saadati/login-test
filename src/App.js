@@ -5,6 +5,8 @@ import VerifyPage from "./pages/verifyPage/VerifyPage";
 import RecoveryPassword from "./pages/recoveryPassword/RecoveryPassword";
 import DataPage from "./pages/dataPage/DataPage";
 import Locations from "./pages/locations/Location";
+import Home from "./pages/home/Home";
+import Friends from "./pages/friends/Friends";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Route component={RecoveryPassword} path={"/recovery"} />
       <Route component={DataPage} path={"/data"} />
       <Route component={Locations} path={"/locations"} />
+      <Route component={Home} path={"/"} exact />
+      <Route component={Friends} path={"/friends"} />
     </Router>
   );
 }

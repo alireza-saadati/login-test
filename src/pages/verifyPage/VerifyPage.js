@@ -8,7 +8,9 @@ const VerifyPage = (props) => {
   // console.log("1. state: ", state);
   const { state } = props.history.location; // ==> 09017400180
   console.log("2. react-router state: ", state);
-
+  let agha = () => {
+    return console.log("hbhbbh");
+  };
   return (
     <div className="verify">
       <Banner />
@@ -27,7 +29,7 @@ const VerifyPage = (props) => {
         </div>
         <div className="flex-center">
           <button className="back-button">b</button>
-          <GlobalSubmitButton text={"ارسال"} />
+          <GlobalSubmitButton text={"ارسال"} clicked={agha} />
         </div>
       </Container>
     </div>

@@ -27,7 +27,7 @@ const DataPage = () => {
             placeholder="تکرار رمز عبور"
           />
         </div>
-        <GlobalSubmitButton text="ورود" />
+        <GlobalSubmitButton text="ورود" Agha="asghar" />
       </div>
     </Container>
   );
