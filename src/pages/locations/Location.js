@@ -38,6 +38,7 @@ const Locations = () => {
     if (selectedCountry) {
       fetchProvincesList();
     }
+    // eslint-disable-next-line
   }, [selectedCountry]);
 
   // 3. fetch cities list
@@ -55,6 +56,7 @@ const Locations = () => {
     if (selectedProvince) {
       fetchCitiesList();
     }
+    // eslint-disable-next-line
   }, [selectedProvince]);
 
   const handleChangeCountry = (event) => setSelectedCountry(event.target.value);

@@ -1,7 +1,7 @@
 import "./loginPage.style.scss";
 import Banner from "../../components/banner/Banner";
 import GlobalSubmitButton from "../../components/globalSubmitButton/GlobalSubmitButton";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Error from "../../components/error/Error";
 import Container from "../../components/container/Container";
 import { useHistory } from "react-router-dom/cjs/react-router-dom";

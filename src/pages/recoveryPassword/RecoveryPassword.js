@@ -17,7 +17,7 @@ const RecoveryPassword = () => {
           placeholder="کد ارسال شده را وارد کنید"
         />
         <div className="link">
-          <a href="#">ارسال مجدد کد فعالسازی</a>
+          <button type={"button"}>ارسال مجدد کد فعالسازی</button>
         </div>
 
         <div className="flex-center">
